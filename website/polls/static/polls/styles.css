@@ -1,0 +1,17 @@
+body {
+    background: white url("images/background.gif");
+    color: green;
+    font-family: Verdana, sans-serif;
+    padding:30px;
+}
+.content {
+    display:block;
+    height:100%;
+    width:100%;
+    box-sizing:border-box;
+    padding:30px;
+    background-color:white;
+}
+li a { 
+    font-weight:bold;
+}
