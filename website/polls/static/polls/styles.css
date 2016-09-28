@@ -1,6 +1,6 @@
 body {
     background: white url("images/background.gif");
-    color: green;
+    color: black;
     font-family: Verdana, sans-serif;
     padding:30px;
 }
@@ -9,9 +9,57 @@ body {
     height:100%;
     width:100%;
     box-sizing:border-box;
-    padding:30px;
+    padding: 10px 30px;
     background-color:white;
+}
+li {
+    list-style-type:none;
 }
 li a { 
     font-weight:bold;
+}
+input[type=radio] {
+    display:none;
+}
+label { 
+    padding:10px;
+    background-color: grey;
+    display:block;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+label:hover {
+    background-color: darkgrey;
+}
+label::before {
+    padding:10px;
+    margin-right:10px;
+    width:10px;
+    display:inline-block;
+    content:"◻";
+    font-size:1.5em;
+    font-weight: bold;
+}
+input[type=radio]:checked + label {
+    background:deeppink;
+}
+input[type=radio]:checked + label::before {
+    content:"✓";
+}
+input[type=submit] {
+    background-color:white;
+    border: 1px solid black;
+    padding:10px;
+    cursor:pointer;
+    float:left;
+}
+input[type=submit]:hover {
+    background-color: lightgrey;
+}
+
+@media (max-width: 1000px) {
+    body { 
+        padding-left:0;
+        padding-right:0;
+    }
 }

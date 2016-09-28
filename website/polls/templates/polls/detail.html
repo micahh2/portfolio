@@ -9,7 +9,6 @@
         {% for choice in question.choice_set.all %}
         <input name="choice" id="choice{{ forloop.counter }}" type="radio" value="{{ choice.id }}"/>
         <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label>
-        </br>
         {% endfor %}
         <input type="submit" value="Vote"/>
     </form>
